@@ -1,0 +1,312 @@
+/* ------ styles generaux ------ */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgb(252, 210, 218);
+    /* padding: 20px; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@font-face {
+    font-family: "Jacquard 12";
+    src: url(/fonts/Jacquard_12/Jacquard12-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Arcade Classic";
+    src: url(/fonts/arcadeclassic/ARCADECLASSIC.TTF);
+}
+
+h1 {
+    font-family: "Arcade Classic";
+    text-align: center;
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 0.8;
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-family: "Arcade Classic";
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-family: "Arcade Classic";
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-top: 32px;
+}
+
+.column {
+    flex-direction: column;
+}
+/* .pixelify-sans-regular {
+  font-family: "Pixelify Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jacquard-12-regular {
+    font-family: "Jacquard 12", serif;
+    font-weight: 400;
+    font-style: normal;
+} */
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo a {
+    font-family: "Jacquard 12";
+    font-weight: 400;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home h1 {
+    font-family: "Jacquard 12";
+    font-weight: 400;
+}
+
+.home #description {
+    font-family: "Arcade Classic";
+    font-weight: 400;
+    font-size: 2em;
+    text-align: center;
+}
+
+.nav {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.nav li {
+    list-style-image: url(/media/heart.svg);
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    font-family: "Arcade Classic";
+    font-weight: 400;
+    font-size: 5em;
+}
+
+#heart-outline {
+    position: absolute;
+    z-index: -10;
+    opacity: 0.4;
+}
+
+.sideways {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    margin: 0 32px;
+    text-align: left;
+}
+
+/* ----- header ----- */
+header {
+    width: 90%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas: ". logo nav";
+}
+
+.logo {
+    grid-area: logo;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: right;
+}
+
+.plain-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.plain-menu li {
+    margin-left: 8px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    font-family: "Arcade Classic";
+    font-weight: 400;
+    font-size: 1.5em;
+    border: solid black;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(252, 210, 218);
+}
+
+nav a.active {
+    background-color: black;
+    color: rgb(252, 210, 218);
+    cursor: default;
+}
+
+#menu-icon {
+    justify-self: flex-end;
+}
+
+.hidden-menu {
+    display: none;
+    position: relative;
+}
+
+#menu-icon.active {
+    background-color: black;
+    color: rgb(252, 210, 218);
+}
+
+.toggle-menu {
+    width: 130px;
+    display: none; 
+    position: absolute; 
+    right: 0;
+    top: 30px;
+}
+
+.toggle-menu li {
+    margin-top: 24px; 
+    text-align: right;   
+}
+
+/* ----- footer ----- */
+footer {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    padding: 20px 0;
+}
+
+footer * {
+    color: rgb(252, 210, 218);
+    list-style: none;
+}
+
+
+/* --------- about ---------- */
+.about-parts {
+    margin-bottom: 32px;
+}
+
+/* --------- projects --------- */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.project {
+    border: solid 5px;
+    padding: 12px;
+    margin: 20px;
+    height: fit-content;
+}
+
+.project video, .project img {
+    border: solid;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project h3 a {
+    font-family: "Arcade Classic";
+    font-weight: 400;
+}
+
+/* ----- contact ------ */
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.content div {
+    margin-bottom: 20px;
+}
+
+.cv {
+    margin: 0 32px;
+}
+
+
+@media (width<=1000px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .plain-menu {
+        display: none;
+    }
+
+    .hidden-menu {
+        display: block;
+    }
+
+    #menu-icon:hover {
+        cursor: pointer;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+}
+
+@media (width<=600px) {
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
