@@ -1,2 +1,2 @@
-# lunesque.github.io
-# welcome to my portfolio!!!!
+# Thuy Hang Nguyen's portfolio
+
