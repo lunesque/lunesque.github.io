@@ -6,8 +6,8 @@ import { useRef } from "react";
 export const Header = () => {
   const { pathname } = useLocation();
   const { t, i18n } = useTranslation();
-  const toggleMenuRef = useRef(null);
-  const menuIconRef = useRef(null);
+  const toggleMenuRef = useRef<HTMLUListElement>(null);
+  const menuIconRef = useRef<HTMLDivElement>(null);
 
   const setLang = (lng: string) => {
     i18n.changeLanguage(lng);
@@ -20,8 +20,12 @@ export const Header = () => {
   ];
 
   const toggleBurgerMenu = () => {
-    toggleMenuRef.current.classList.toggle("hidden");
-    menuIconRef.current.classList.toggle("active");
+    if (toggleMenuRef.current) {
+      toggleMenuRef.current.classList.toggle("hidden");
+    }
+    if (menuIconRef.current) {
+      menuIconRef.current.classList.toggle("active");
+    }
   };
 
   return (
