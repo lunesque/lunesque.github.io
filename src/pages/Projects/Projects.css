@@ -1,0 +1,123 @@
+.projects {
+  display: flex;
+}
+
+.projects-tabs .stars {
+  width: 28px;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  top: -20px;
+  left: 40%;
+}
+
+.stars.active {
+  opacity: 1;
+}
+
+.projects .section {
+  padding-right: 0.7rem;
+}
+
+/* .project-grid {
+    border: solid 5px;
+    padding: 12px;
+    margin: 20px;
+    height: fit-content;
+}
+
+.project video, .project img {
+    border: solid;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project h3 a {
+    font-family: "Arcade Classic";
+    font-weight: 400;
+} */
+
+/* ── Tabs ────────────────────────────────────────────── */
+
+.projects-tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 3rem;
+  /* border-bottom: 1px solid var(--border); */
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--muted);
+  padding: 0.8rem 1.4rem;
+  position: relative;
+  transition: color var(--transition);
+  letter-spacing: 0.02em;
+}
+
+.tab-btn::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform var(--transition);
+}
+
+.tab-btn:hover {
+  color: var(--text);
+}
+
+.tab-btn.active {
+  color: var(--text);
+}
+
+.tab-btn.active::after {
+  transform: scaleX(1);
+}
+
+/* ── Grid ────────────────────────────────────────────── */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  animation: pageEnter 0.35s ease both;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Responsive ──────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .projects-tabs {
+    flex-direction: column;
+  }
+
+  .projects-tabs .stars {
+    top: 8px;
+    left: -12px;
+  }
+}

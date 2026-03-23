@@ -1,0 +1,53 @@
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home h1 {
+  font-family: "Jacquard 12";
+  font-weight: 400;
+}
+
+.home #description {
+  font-family: "Arcade Classic";
+  font-weight: 400;
+  font-size: 2em;
+  text-align: center;
+}
+
+#heart-outline {
+  position: absolute;
+  z-index: -10;
+  opacity: 0.4;
+}
+
+.nav {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.nav li {
+  list-style-image: url(/heart.svg);
+  margin-bottom: 16px;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  font-family: "Arcade Classic";
+  font-weight: 400;
+  font-size: 5em;
+}
+
+#description {
+  margin: 0 20px;
+}
+
+@media (width<600px) {
+  .nav a {
+    font-size: 4em;
+  }
+}

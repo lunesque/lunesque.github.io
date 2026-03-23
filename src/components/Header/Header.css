@@ -1,0 +1,117 @@
+header {
+  max-width: 1300px;
+  width: 100%;
+  padding: 40px 0.7rem 60px 0.7rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-areas: "lang-btn logo nav";
+  box-sizing: border-box;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: right;
+}
+
+.plain-menu {
+  min-width: 460px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+
+.plain-menu li {
+  margin-left: 8px;
+}
+
+nav li {
+  list-style: none;
+}
+
+.lang-btn {
+  grid-area: lang-btn;
+  display: flex;
+  align-items: center;
+}
+
+nav a,
+.lang-btn > div {
+  font-family: "Arcade Classic";
+  font-weight: 400;
+  font-size: 1.5em;
+  border: solid black;
+  padding: 8px;
+  color: black;
+  text-decoration: none;
+  background-color: rgb(252, 210, 218);
+  cursor: pointer;
+}
+
+nav a.active,
+.lang-btn > .active {
+  background-color: black;
+  color: rgb(252, 210, 218);
+  cursor: default;
+}
+
+#menu-icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.hidden-menu {
+  display: none;
+  position: relative;
+}
+
+#menu-icon.active {
+  background-color: black;
+  color: rgb(252, 210, 218);
+}
+
+.toggle-menu {
+  width: 150px;
+  height: 160px;
+  position: absolute;
+  right: 0;
+  top: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+.toggle-menu li {
+  margin-top: 24px;
+  text-align: right;
+}
+
+@media (width<=1000px) {
+  .plain-menu {
+    display: none;
+  }
+
+  .hidden-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  #menu-icon:hover {
+    cursor: pointer;
+  }
+}

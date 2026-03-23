@@ -1,0 +1,16 @@
+.about {
+  display: flex;
+}
+
+.about-parts {
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.about-parts .stars {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  top: -24px;
+  left: -28px;
+}

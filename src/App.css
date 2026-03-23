@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Console", Monaco, monospace;
+  text-align: left;
+}
+
+@font-face {
+  font-family: "Jacquard 12";
+  src: url(/fonts/Jacquard_12/Jacquard12-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Arcade Classic";
+  src: url(/fonts/arcadeclassic/ARCADECLASSIC.TTF);
+}
+
+h1 {
+  font-family: "Arcade Classic";
+  text-align: center;
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: 0.8;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-family: "Arcade Classic";
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-family: "Arcade Classic";
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo a {
+  font-family: "Jacquard 12";
+  font-weight: 400;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.sideways {
+  writing-mode: vertical-rl;
+  text-orientation: sideways;
+  margin-right: 60px;
+  text-align: left;
+  margin-top: 0;
+}
+
+main {
+  max-width: 1300px;
+}
+
+@media (width<=1000px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .plain-menu {
+    display: none;
+  }
+
+  .hidden-menu {
+    display: block;
+  }
+
+  #menu-icon:hover {
+    cursor: pointer;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+}
+
+@media (width<=600px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  .sideways {
+    margin-right: 20px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
