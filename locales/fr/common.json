@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "accueil",
+    "about": "a propos",
+    "projects": "projets",
+    "contact": "contact"
+  },
+  "home": {
+    "desc": "Developpeuse web, UX/UI designer, graphiste"
+  },
+  "about": {
+    "title": "A propos",
+    "job-title": "Developpeuse web full-stack",
+    "desc": "Je suis Hang — développeuse full-stack et designer basé en Île-de-France. Passionné par la création d'expériences digitales significatives, je me spécialise dans la création d'applications web responsives et attractifs.",
+    "t1": "Mon parcours",
+    "p1": "Je suis en 3e année du BUT Métiers du multimédia et de l'internet (MMI), parcours Développement web et dispositifs interactifs. Ma formation mêle design graphique, développement web et recherche utilisateur, ce qui me permet de faire le pont entre interfaces esthétiques et bases techniques solides.",
+    "t2": "Mes valeurs",
+    "p2": "Je m'intéresse au travail des archivistes numériques — Wayback Machine, historiens de l'internet qui gardent une trace de l'histoire du web et la rendent accessible à tous. Le web est un patrimoine humain, pas seulement un outil.",
+    "t3": "Mes interets",
+    "p3": "Quand je ne code pas, je lis des romans fantastiques, je me renseigne sur des communautés en ligne de niche, ou je fabrique quelque chose de mes mains (crochet, diy et tout ce qui me fait envie sur le moment). "
+  },
+  "projects": {
+    "title": "Projets",
+    "desc": "Une sélection de réalisations en développement web, design graphique et UX/UI.",
+    "tab_webdev": "Développement web",
+    "tab_graphic": "Design Graphique",
+    "tab_uxui": "UX / UI",
+    "view_project": "Voir le projet"
+  },
+  "contact": {
+    "title": "Contact",
+    "desc": "Vous avez un projet en tête ? Je serais ravi d'en entendre parler.",
+    "info_title": "Besoin d'une developpeuse ?",
+    "info_body_p1": "Que ce soit en stage, en alternance, ou en collaboration...",
+    "info_body_p2": "N’hésitez pas à me contacter par ",
+    "info_body_p3": " sur ",
+    "info_body_p4": "ou aller voir mes projets sur ",
+    "cv_title": "Mon CV"
+  },
+  "footer": {
+    "copy": "© 2026 — Conçu par hang <3",
+    "privacy": "Confidentialité",
+    "legal": "Mentions légales"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "home",
+    "about": "about",
+    "projects": "projects",
+    "contact": "contact"
+  },
+  "home": {
+    "desc": "Web developer, UX/UI and graphic designer"
+  },
+  "about": {
+    "title": "About me",
+    "job-title": "Full-stack web developer",
+    "desc": "I'm Hang — a full-stack developer and designer based in Île-de-France. I specialize in building performant, accessible web applications with a strong design sensibility. A developer & designer passionate about creating meaningful digital experiences.",
+    "t1": "My education",
+    "p1": "I'm in my third year of a Technical Bachelor's degree in Multimédia and Internet Professions (Web development and interactive devices track). Essentially, my background spans graphic design, frontend engineering, and user research, which lets me bridge the gap between beautiful interfaces and solid technical foundations.",
+    "t2": "My values",
+    "p2": "I care about the work of digital archivists — the Wayback Machine, internet historians — because they stand for two things I believe in: keeping knowledge freely accessible to everyone, and making sure what we build today leaves a trace. The web is part of human heritage, not just a tool.",
+    "t3": "My interests",
+    "p3": "When I'm not coding, you can find me reading fantasy novels, learning about niche online communities, or making something by hand (crochet, crafts, and whatever else I'm fancying at the moment)."
+  },
+  "projects": {
+    "title": "Projects",
+    "desc": "A curated selection of work across web development, graphic design, and UX/UI.",
+    "tab_webdev": "Web Development",
+    "tab_graphic": "Graphic Design",
+    "tab_uxui": "UX / UI",
+    "view_project": "View project"
+  },
+  "contact": {
+    "title": "Contact",
+    "desc": "Have a project in mind? I'd love to hear about it.",
+    "info_title": "Looking for a developer ?",
+    "info_body_p1": "Whether through an internship, work-study/apprenticeship, or in collaboration...",
+    "info_body_p2": "Send me an ",
+    "info_body_p3": " find me on ",
+    "info_body_p4": "or see more of my projects on ",
+    "cv_title": "My resume"
+  },
+  "footer": {
+    "copy": "© 2026 — Made by hang <3",
+    "privacy": "Privacy",
+    "legal": "Legal"
+  }
+}
